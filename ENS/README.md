@@ -2,7 +2,7 @@
 
 - To run this project follow the steps 
 
-head to public > and opem index.html on your browser.
+head to public > and open index.html on your browser.
 
 - in future improvements we will run this by usen express/handlebars.
 
