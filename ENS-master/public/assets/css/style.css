@@ -1,13 +1,30 @@
+h1{
+  font-family: 'Marcellus', serif;
+font-size: 14px;}
 
-body {
-    font: 400 15px/1.8 Lato, sans-serif;
-    color: #777;
+h2 {
+  font-family: 'Michroma', sans-serif;
 }
-h3, h4 {
+/* font-family: 'Michroma', sans-serif; */
+h3 {
+  font-family: 'Michroma', sans-serif;
+  font-size: 16px;
+  color: #6a6d72;
+}
+
+
+h4 {
     margin: 10px 0 30px 0;
     letter-spacing: 10px;
-    font-size: 20px;
+    font-size: 14px;
     color: #111;
+    font-family: 'Michroma', sans-serif;
+}
+p {
+  font-family: 'Michroma', sans-serif;
+  font-size: 12px;
+  color: black;
+
 }
 .container {
     padding: 80px 120px;
@@ -91,6 +108,8 @@ h3, h4 {
 
 .nav-tabs li a {
     color: #777;
+    font-family: 'Michroma', sans-serif;
+    font-size: 12px;
 }
 
 .navbar {
