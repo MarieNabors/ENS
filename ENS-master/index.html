@@ -10,7 +10,8 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="public/assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
@@ -22,21 +23,32 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#myPage">Logo</a>
+
+      <a class="navbar-brand"><img src="public/assets/images/ensLogoSmall.png" id="small-logo"></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#myPage">HOME</a></li>
-        <li><a href="#band">BAND</a></li>
-        <li><a href="#tour">TOUR</a></li>
+        <li><a href="#band">ABOUT US</a></li>
+        <li><a href="#tour">EVENTS</a></li>
         <li><a href="#contact">CONTACT</a></li>
+        <!-- dropdown menu -->
         <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">AWARDS
           <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Merchandise</a></li>
-            <li><a href="#">Extras</a></li>
+            <li><a href="#">ENS Poster Award</a></li>
+            <li><a href="#">Betsy Love McClung Award</a></li>
             <li><a href="#">Media</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">GRANTS
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Clinical Project Grant</a></li>
+            <li><a href="#">Clinical Research Grant</a></li>
+            <li><a href="#">Travel Grant Application</a></li>
           </ul>
         </li>
         <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
@@ -93,45 +105,52 @@
 
 <!-- Container (The Band Section) -->
 <div id="band" class="container text-center">
-  <h3>THE BAND</h3>
-  <p><em>We love music!</em></p>
-  <p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <img src="public/assets/images/ensLogo.png">
+  <p><em><b>Mission Statement</b></em></p>
+  <p>The Endocrine Nurses Society is a professional organization for endocrine nurses founded to promote excellence in the clinical care of patients through advancement of the science and art of endocrine nursing.</p>
   <br>
+  <p class="our-goal"><em><b> Our Goal</b></em></p>
+  <p>
+    • Support professional development and facilitate communication among endocrine nurses.<br>
+    • Provide educational forums on health topics related to endocrine disorders.<br>
+    • Support nursing research related to the care of patients with endocrine disorders.<br>
+    • Enhance interdisciplinary collaboration in patient care and research.
+  </p>
+
   <div class="row">
     <div class="col-sm-4">
-      <p class="text-center"><strong>Name</strong></p><br>
       <a href="#demo" data-toggle="collapse">
-        <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+        <img src="public/assets/images/nurse.png" class="img-nurse" alt="Random Name">
       </a>
       <div id="demo" class="collapse">
-        <p>Guitarist and Lead Vocalist</p>
-        <p>Loves long walks on the beach</p>
+        <p>name</p>
+        <p>one pasion</p>
         <p>Member since 1988</p>
       </div>
     </div>
     <div class="col-sm-4">
-      <p class="text-center"><strong>Name</strong></p><br>
       <a href="#demo2" data-toggle="collapse">
-        <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+        <img src="public/assets/images/nurse.png" class="img-nurse" alt="Random Name">
       </a>
       <div id="demo2" class="collapse">
-        <p>Drummer</p>
-        <p>Loves drummin'</p>
-        <p>Member since 1988</p>
+          <p>name</p>
+          <p>one pasion</p>
+          <p>Member since 1988</p>
       </div>
     </div>
     <div class="col-sm-4">
-      <p class="text-center"><strong>Name</strong></p><br>
       <a href="#demo3" data-toggle="collapse">
-        <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+        <img src="public/assets/images/nurse.png" class="img-nurse" alt="Random Name">
       </a>
       <div id="demo3" class="collapse">
-        <p>Bass player</p>
-        <p>Loves math</p>
-        <p>Member since 2005</p>
+          <p>name</p>
+          <p>one pasion</p>
+          <p>Member since 1988</p>
       </div>
     </div>
   </div>
+  <p class="file">Please view our brochure for more information about us. Feel free to print and share with colleagues! </p>
+  <a href="http://www.endo-nurses.org/resources/Documents/ENS%20Member%20Brochure%202017.pdf" target="_blank">ENS Member Brochure 2017.pdf</a>
 </div>
 
 <!-- Container (TOUR Section) -->
@@ -211,19 +230,24 @@
 
 <!-- Container (Contact Section) -->
 <div id="contact" class="container">
-  <h3 class="text-center">Contact</h3>
-  <p class="text-center"><em>We love our fans!</em></p>
+  <h3 class="text-center">Get in touch</h3>
+  <p class="text-center"><em>We are here to help you!</em></p>
+
 
   <div class="row">
     <div class="col-md-4">
       <p>Fan? Drop a note.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span>Chicago, US</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>Orlando, US</p>
       <p><span class="glyphicon glyphicon-phone"></span>Phone: +00 1515151515</p>
       <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p>
     </div>
+
+
     <div class="col-md-8">
       <div class="row">
         <div class="col-sm-6 form-group">
+            <!-- send email  -->
+          <form method="POST" action="https://formspree.io/robydoidao2006@yahoo.com">
           <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
         </div>
         <div class="col-sm-6 form-group">
@@ -235,10 +259,13 @@
       <div class="row">
         <div class="col-md-12 form-group">
           <button class="btn pull-right" type="submit">Send</button>
+        </form>
         </div>
       </div>
     </div>
   </div>
+
+
   <br>
   <h3 class="text-center">From The Blog</h3>
   <ul class="nav nav-tabs">
@@ -280,15 +307,53 @@ To use this code on your website, get a free API key from Google.
 Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 -->
 
-<!-- Footer -->
-<footer class="text-center">
-  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
-    <span class="glyphicon glyphicon-chevron-up"></span>
-  </a><br><br>
-  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" data-toggle="tooltip" title="Visit w3schools">www.w3schools.com</a></p>
-</footer>
+<footer>
+  <div class="container" id="aboutUs">
+			<div class="row">
+				<div class="col-md-4">
+					<h3>About Us</h3>
+            <p>
+              lets put something in here
+            </p>
+            <p>
+              I don't know, maybe an address ?
+            </p>
+            <p>
+              or just some extra info?
+            </p>
 
-<script src="scripts.js"></script>
+				</div>
+				<div class="col-md-4" id="quickLinks">
+					<h3>Quick Links</h3>
+					<ul>
+						<li><a href="how.html">History</a></li>
+						<li><a href="#">Products</a></li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+				<div class="col-md-4" id="followUs">
+					<h3>Follow Us</h3>
+					<ul class="socialIcons">
+						<li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter-square" style="font-size:24px;color:white"></i><span>     Twitter</span></a></li>
+						<li><a href="https://www.facebook.com/Endocrine-Nurses-Society-179481138764587/" target="_blank"><i class="fa fa-facebook-square" style="font-size:24px;color:white"></i><span>     Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" style="font-size:24px;color:white"></i><span>     Instagram</span></a></li>
+						<li><a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin-square" style="font-size:24px;color:white"></i><span>     LinkedIn</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 fh5co-copyright text-center">
+          <p><small>&copy; 2018 Endocrine Nurses Society All Rights Reserved</small></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+<script src="public/assets/js/scripts.js"></script>
 
 </body>
 </html>

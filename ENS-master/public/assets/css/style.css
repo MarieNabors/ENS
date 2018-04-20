@@ -144,6 +144,7 @@ h3, h4 {
 
 footer {
     background-color: #2d2d30;
+    color: red;
     color: #f5f5f5;
     padding: 32px;
 }
@@ -160,8 +161,15 @@ footer a:hover {
 textarea {
     resize: none;
 }
+#followUs h3 {
+  color: white;
+}
 
-
+#quickLinks h3 {
+  color: white;
+} #aboutUs h3 {
+  color: white;
+}
 /* ////////// */
 /* New stuff  */
 /* ////////// */
@@ -182,4 +190,7 @@ width: 20%;
 
 .file{
     margin-top:20px;
+}
+ul {
+  list-style-type: none;
 }
