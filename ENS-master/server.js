@@ -1,41 +1,32 @@
-// Dependencies
-var express = require("express");
-var exphbs = require("express-handlebars");
+var express= require ("express");
+var bodyParser = require ("body-parser");
 
-// Create an instance of the express app.
+
 var app = express();
 
-// Specify the port.
-var port = 3000;
 
-// Set Handlebars as the default templating engine.
-app.engine("handlebars", exphbs({ defaultLayout: "main" }));
-app.set("view engine", "handlebars");
+// Sets an initial port. We"ll use this later in our listener
+var PORT = process.env.PORT || 8080;
 
-// Data
-var lunches = [
-  {
-    lunch: "Beet & Goat Cheese Salad with minestrone soup."
-  }, {
-    lunch: "Pizza, two double veggie burgers, fries with a Big Gulp"
-  }
-];
+// Sets up the Express app to handle data parsing
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+app.use(express.static(__dirname + '/public'))
 
-// Routes
-app.get("/weekday", function(req, res) {
-  res.render("index", lunches[0]);
+// ================================================================================
+// ROUTER
+// The below points our server to a series of "route" files.
+// These routes give our server a "map" of how to respond when users visit or request data from various URLs.
+// ================================================================================
+
+// require("./routes/apiRoutes")(app);
+require("./routes/htmlroutes.js")(app);
+
+// =============================================================================
+// LISTENER
+// The below code effectively "starts" our server
+// =============================================================================
+
+app.listen(PORT, function() {
+  console.log("App listening on PORT: " + PORT);
 });
-
-app.get("/weekend", function(req, res) {
-  res.render("index", lunches[1]);
-});
-
-app.get("/lunches", function(req, res) {
-  res.render("all-lunches", {
-    foods: lunches,
-    eater: "david"
-  });
-});
-
-// Initiate the listener.
-app.listen(port);
