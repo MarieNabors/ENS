@@ -241,7 +241,10 @@ textarea {
     width: 40%;
     margin-top:20px;
 }
-
+.bioPic{
+  float:left;
+  margin-right: 20px;
+}
 .our-goal{
     margin-top:-20px;
 }
