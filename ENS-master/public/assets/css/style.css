@@ -2,37 +2,43 @@
   background-image: linear-gradient(to right top, #e4e4f5, #b3b4d9, #8286bd, #505ba2, #013386);
   width: 100%
 }
+#contact {
+  background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
 #events {
   width: 100%;
 }
 .home {
- font-family: 'Orbitron', sans-serif;
+ font-family: 'Roboto Slab', serif;
   font-size: 30px;
-  color: black;
+  color: #2d2d30;
   letter-spacing: 4px;
   text-shadow: -1px 0px 10px rgba(0, 0, 0, 1);
 }
 .home1 {
-  color: black;
-  font-family: 'Orbitron', sans-serif;
+  color:#2d2d30;
+  font-family: 'Roboto Slab', serif;
   font-size: 20px;
   letter-spacing: 4px;
   text-shadow: -1px 0px 10px rgba(0, 0, 0, 1);
 
 }
 h1{
-font-family: 'Orbitron', sans-serif;
+font-family: 'Roboto Slab', serif;
 font-size: 30px;
 letter-spacing: 4px;
 text-shadow: -1px 0px 10px rgba(0, 0, 0, 1);
+color:#2d2d30;
 }
 
 h2 {
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Roboto Slab', serif;
+  letter-spacing: 4px;
+  text-shadow: -1px 0px 10px rgba(0, 0, 0, 1);
 }
 /* font-family: 'Michroma', sans-serif; */
 h3 {
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Roboto Slab', serif;
   font-size: 16px;
   color: #6a6d72;
 }
@@ -43,12 +49,13 @@ h4 {
     letter-spacing: 10px;
     font-size: 14px;
     color: #111;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Roboto Slab', serif;
 }
 p {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 12px;
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
   color: black;
+  letter-spacing: 3px;
 
 }
 .container {
@@ -67,9 +74,10 @@ p {
 }
 .carousel-inner img {
     -webkit-filter: grayscale(50%);
-    filter: grayscale(50%); /* make all photos black and white */
+    filter: grayscale(70%); /* make all photos black and white */
     width: 100%; /* Set width to 100% */
     margin: auto;
+    background-blend-mode: lighten;
 }
 .carousel-caption h3 {
     color: #fff !important;
@@ -94,9 +102,14 @@ p {
     border-bottom-left-radius: 0;
 }
 .thumbnail {
-    padding: 0 0 15px 0;
-    border: none;
-    border-radius: 0;
+    padding: 15px;
+    outline-style: solid;
+    outline-color:#2d2d30;
+    outline-width:thick;
+    height: 300px;
+    width: 250px;
+    border: 15px;
+
 }
 .thumbnail p {
     margin-top: 15px;
@@ -105,9 +118,10 @@ p {
 .btn {
     padding: 10px 20px;
     background-color: #333;
-    color: #f1f1f1;
+    color: white;
     border-radius: 0;
     transition: .2s;
+    font-family: 'Roboto Slab', serif;
 }
 .btn:hover, .btn:focus {
     border: 1px solid #333;
@@ -137,12 +151,12 @@ p {
 
 .nav-tabs li a {
     color: #777;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Roboto Slab', serif;
     font-size: 12px;
 }
 
 .navbar {
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Roboto Slab', serif;
     margin-bottom: 0;
     background-color: #2d2d30;
     border: 0;
@@ -242,4 +256,9 @@ width: 20%;
 }
 ul {
   list-style-type: none;
+}
+.col-sm-4 p {
+  color: white;
+  font-size: 16px;
+  text-shadow: -1px 0px 10px rgba(0, 0, 0, 1);
 }

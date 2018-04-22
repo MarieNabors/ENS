@@ -6,14 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Cinzel|Marcellus|Michroma" rel="stylesheet">
-  <<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300" rel="stylesheet">
 
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -69,8 +66,9 @@
     </ol>
 
     <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
+    <div class="carousel-inner" role="listbox" id="slide1">
       <div class="item active">
+        <!-- <img class="slideLogo img-thumbnail" src="/assets/images/white-hospital-64.png" alt="logo"> -->
         <img src="https://png.pngtree.com/thumb_back/fw800/back_pic/00/02/50/835617f07e419bb.jpg" alt="nursing" width="1200" height="700">
         <div class="carousel-caption">
           <h3 class="home">Mission</h3>
@@ -108,50 +106,39 @@
       <span class="sr-only">Next</span>
     </a>
 </div>
-
+<br>
+<br>
 <!-- Container (The Band Section) -->
 <div id="band" class="container text-center">
   <img src="/assets/images/ensLogoSmall.png">
-  <p><em><b>Mission Statement</b></em></p>
-  <p>The Endocrine Nurses Society is a professional organization for endocrine nurses founded to promote excellence in the clinical care of patients through advancement of the science and art of endocrine nursing.</p>
-  <br>
-  <p class="our-goal"><em><b> Our Goal</b></em></p>
-  <p>
-    • Support professional development and facilitate communication among endocrine nurses.<br>
-    • Provide educational forums on health topics related to endocrine disorders.<br>
-    • Support nursing research related to the care of patients with endocrine disorders.<br>
-    • Enhance interdisciplinary collaboration in patient care and research.
-  </p>
+
 
   <div class="row">
     <div class="col-sm-4">
+      <p class="aboutUs">Resources</p>
       <a href="#demo" data-toggle="collapse">
         <img src="/assets/images/nurse.png" class="img-nurse" alt="Random Name">
       </a>
       <div id="demo" class="collapse">
-        <p>name</p>
-        <p>one pasion</p>
-        <p>Member since 1988</p>
+
       </div>
     </div>
     <div class="col-sm-4">
+      <p class="aboutUs">Donate</p>
       <a href="#demo2" data-toggle="collapse">
         <img src="/assets/images/nurse.png" class="img-nurse" alt="Random Name">
       </a>
       <div id="demo2" class="collapse">
-          <p>name</p>
-          <p>one pasion</p>
-          <p>Member since 1988</p>
+
       </div>
     </div>
     <div class="col-sm-4">
+      <p class="aboutUs">Membership</p>
       <a href="#demo3" data-toggle="collapse">
         <img src="/assets/images/nurse.png" class="img-nurse" alt="Random Name">
       </a>
       <div id="demo3" class="collapse">
-          <p>name</p>
-          <p>one pasion</p>
-          <p>Member since 1988</p>
+
       </div>
     </div>
   </div>
@@ -159,21 +146,11 @@
   <a href="http://www.endo-nurses.org/resources/Documents/ENS%20Member%20Brochure%202017.pdf" target="_blank">ENS Member Brochure 2017.pdf</a>
 </div>
 
-<!-- Container (TOUR Section) -->
+<!-- Container Events Section -->
 <div id="tour" class="bg-1">
   <div class="container">
     <h1 class="text-center">ENS Upcoming Events</h1>
     <h3 class="text-center">Grow with us!</h3>
-    <!-- <ul class="list-group">
-      <li class="list-group-item">AACE: May 16-20, 2018 Boston, MA<span class="label label-danger"></span></li>
-      <li class="list-group-item">ATCD: July 12-15, 2018 Keystone, CO<span class="label label-danger"></span></li>
-      <li class="list-group-item">MEDS WEST: August 1-4, 2018 San Diego, CA<span class="label label-danger"></span></li>
-      <li class="list-group-item">AADE18: August 17-20, 2018 Baltimore, MD<span class="label label-danger"></span></li>
-      <li class="list-group-item">MEDS EAST: October 10-13, 2018 Orlando, FL<span class="label label-danger"></span></li>
-      <li class="list-group-item">ICE: December 1-4, 2018 Cape Town, South Africa<span class="label label-danger"></span></li>
-
-
-    </ul> -->
 <!-- <div class="container"> -->
     <div class="row text-center" id="events">
       <div class="col-sm-4">
@@ -182,7 +159,7 @@
           href="https://www.aace.com/annualmeeting/aace-2018">
           <p><strong>Boston</strong></p>
           <p>May 16-20</p>
-          <button class="btn"><a href="https://www.aace.com/annualmeeting/aace-2018" target="_blank">Info</a></button>
+          <button class="btn"><a href="https://www.aace.com/annualmeeting/aace-2018" target="_blank">INFO</a></button>
         </div>
       </div>
         <div class="col-sm-4">
@@ -191,7 +168,7 @@
             href="http://www.atdcconference.com/">
             <p><strong>Keystone</strong></p>
             <p>July 12-15</p>
-            <button class="btn"><a href="http://www.atdcconference.com/">Info</a></button>
+            <button class="btn"><a href="http://www.atdcconference.com/">INFO</a></button>
           </div>
         </div>
         <div class="col-sm-4">
@@ -200,7 +177,7 @@
             href="https://www.globalacademycme.com/conferences/meds/register">
             <p><strong>San Diego</strong></p>
             <p>August 1-4</p>
-            <button class="btn"><a href="https://www.globalacademycme.com/conferences/meds/register" target="_blank">Info</a></button>
+            <button class="btn"><a href="https://www.globalacademycme.com/conferences/meds/register" target="_blank">INFO</a></button>
           </div>
         </div>
       </div>
@@ -211,7 +188,7 @@
             href="http://www.aademeeting.org/">
             <p><strong>Baltimore</strong></p>
             <p>August 17-20</p>
-            <button class="btn"><a href="http://www.aademeeting.org/" target="_blank">Info</a></button>
+            <button class="btn"><a href="http://www.aademeeting.org/" target="_blank">INFO</a></button>
           </div>
         </div>
         <div class="col-sm-4">
@@ -220,7 +197,7 @@
             href="https://www.globalacademycme.com/conferences/meds/register">
             <p><strong>Orlando</strong></p>
             <p>October 10-13</p>
-            <button class="btn"><a href="https://www.globalacademycme.com/conferences/meds/register" target="_blank">Info</a></button>
+            <button class="btn"><a href="https://www.globalacademycme.com/conferences/meds/register" target="_blank">INFO</a></button>
           </div>
         </div>
         <div class="col-sm-4">
@@ -229,7 +206,7 @@
             href="http://www.ice2018.org/">
             <p><strong>Cape Town</strong></p>
             <p>December 1-4</p>
-            <button class="btn"><a href="http://www.ice2018.org/" target="_blank">Info</a></button>
+            <button class="btn"><a href="http://www.ice2018.org/" target="_blank">INFO</a></button>
           </div>
         </div>
       </div>
@@ -239,16 +216,16 @@
 
 <!-- Container (Contact Section) -->
 <div id="contact" class="container">
-  <h3 class="text-center">Get in touch</h3>
-  <p class="text-center"><em>We are here to help you!</em></p>
+  <h3 class="text-center home1">Reach us here!</h3>
+
 
 
   <div class="row">
     <div class="col-md-4">
-      <p>Fan? Drop a note.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span>Orlando, US</p>
+      <p>We'd love to hear from you!</p>
+      <!-- <p><span class="glyphicon glyphicon-map-marker"></span>Orlando, US</p>
       <p><span class="glyphicon glyphicon-phone"></span>Phone: +00 1515151515</p>
-      <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p> -->
     </div>
   <div class="col-md-8">
       <div class="row">
