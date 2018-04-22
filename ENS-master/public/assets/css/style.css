@@ -1,5 +1,12 @@
+#band {
+  background-image: linear-gradient(to right top, #e4e4f5, #b3b4d9, #8286bd, #505ba2, #013386);
+  width: 100%
+}
+#events {
+  width: 100%;
+}
 .home {
-  font-family: 'Michroma', sans-serif;
+ font-family: 'Orbitron', sans-serif;
   font-size: 30px;
   color: black;
   letter-spacing: 4px;
@@ -7,22 +14,25 @@
 }
 .home1 {
   color: black;
-  font-family: 'Michroma', sans-serif;
+  font-family: 'Orbitron', sans-serif;
   font-size: 20px;
   letter-spacing: 4px;
   text-shadow: -1px 0px 10px rgba(0, 0, 0, 1);
 
 }
 h1{
-  font-family: 'Marcellus', serif;
-font-size: 14px;}
+font-family: 'Orbitron', sans-serif;
+font-size: 30px;
+letter-spacing: 4px;
+text-shadow: -1px 0px 10px rgba(0, 0, 0, 1);
+}
 
 h2 {
-  font-family: 'Michroma', sans-serif;
+  font-family: 'Orbitron', sans-serif;
 }
 /* font-family: 'Michroma', sans-serif; */
 h3 {
-  font-family: 'Michroma', sans-serif;
+  font-family: 'Orbitron', sans-serif;
   font-size: 16px;
   color: #6a6d72;
 }
@@ -33,16 +43,17 @@ h4 {
     letter-spacing: 10px;
     font-size: 14px;
     color: #111;
-    font-family: 'Michroma', sans-serif;
+    font-family: 'Orbitron', sans-serif;
 }
 p {
-  font-family: 'Michroma', sans-serif;
+  font-family: 'Orbitron', sans-serif;
   font-size: 12px;
   color: black;
 
 }
 .container {
     padding: 80px 120px;
+    width: 100vw;
 }
 .person {
     border: 10px solid transparent;
@@ -115,7 +126,10 @@ p {
 
 
 
-
+#tour {
+  background-image: linear-gradient(to right top, #fcfcfc, #c6d0de, #82abbb, #3b8789, #016149);
+  width: 100%;
+}
 
 /* ////// */
 /* navbar */
@@ -123,18 +137,19 @@ p {
 
 .nav-tabs li a {
     color: #777;
-    font-family: 'Michroma', sans-serif;
+    font-family: 'Orbitron', sans-serif;
     font-size: 12px;
 }
 
 .navbar {
-    font-family: Montserrat, sans-serif;
+    font-family: 'Orbitron', sans-serif;
     margin-bottom: 0;
     background-color: #2d2d30;
     border: 0;
-    font-size: 11px !important;
-    letter-spacing: 4px;
+    font-size: 14px !important;
+    letter-spacing: 3px;
     opacity: 0.9;
+    /* text-transform: lowercase; */
 }
 .navbar li a, .navbar .navbar-brand {
     color: #d5d5d5 !important;
