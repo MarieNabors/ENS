@@ -11,7 +11,7 @@
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300" rel="stylesheet">
-
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
@@ -29,7 +29,7 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#myPage">HOME</a></li>
-        <li><a href="#band">ABOUT US</a></li>
+        <li><a href="#band">MEMBERSHIP</a></li>
         <li><a href="#tour">EVENTS</a></li>
         <li><a href="#contact">CONTACT</a></li>
         <!-- dropdown menu -->
@@ -69,18 +69,18 @@
     <div class="carousel-inner" role="listbox" id="slide1">
       <div class="item active">
         <!-- <img class="slideLogo img-thumbnail" src="/assets/images/white-hospital-64.png" alt="logo"> -->
-        <img src="https://png.pngtree.com/thumb_back/fw800/back_pic/00/02/50/835617f07e419bb.jpg" alt="nursing" width="1200" height="700">
+        <img src="/assets/images/bc_background.png" alt="nursing" width="1200" height="700">
         <div class="carousel-caption">
-          <h3 class="home">Mission</h3>
-          <h3 class="home1">ENS is a professional organization for endocrine nurses founded to promote excellence in the clinical care of patients through advancement of the science and art of endocrine nursing.</h3>
+          <h3 class="CarouselTitle">Mission</h3>
+          <h3 class="CarouselText">ENS is a professional organization for endocrine nurses founded to promote excellence in the clinical care of patients through advancement of the science and art of endocrine nursing.</h3>
         </div>
       </div>
 
       <div class="item">
-        <img src="https://png.pngtree.com/thumb_back/fw800/back_pic/03/74/32/3657bc15b5c374b.jpg" alt="Nursing" width="1200" height="700">
+        <img src="/assets/images/bc_background.png" alt="Nursing" width="1200" height="700">
         <div class="carousel-caption">
-          <h3 class="home">Goals</h3>
-          <h3 class="home1">Professional development, facilitate communication,
+          <h3 class="CarouselTitle">Goals</h3>
+          <h3 class="CarouselText">Professional development, facilitate communication,
           educational forums related to endocrine disorders,
           support nursing research, and
           enhance interdisciplinary collaboration </h3>
@@ -88,10 +88,10 @@
       </div>
 
       <div class="item">
-        <img src="https://png.pngtree.com/thumb_back/fw800/back_pic/00/14/72/165667fef775f37.jpg" alt="Endocrinology" width="1200" height="700">
+        <img src="/assets/images/bc_background.png" alt="Endocrinology" width="1200" height="700">
         <div class="carousel-caption">
-          <h3 class="home">Growth</h3>
-          <h3 class="home1">Membership is open to nurses and other professionals who are interested in exploring the world of endocrinology.</h3>
+          <h3 class="CarouselTitle">Growth</h3>
+          <h3 class="CarouselText">Membership is open to nurses and other professionals who are interested in exploring the world of endocrinology.</h3>
         </div>
       </div>
     </div>
@@ -114,8 +114,8 @@
 
 
   <div class="row">
-    <div class="col-sm-4">
-      <p class="aboutUs">Resources</p>
+    <div class="col-sm-6">
+      <p class="aboutUs">MEMBERSHIPS</p>
       <a href="#demo" data-toggle="collapse">
         <img src="/assets/images/nurse.png" class="img-nurse" alt="Random Name">
       </a>
@@ -123,17 +123,17 @@
 
       </div>
     </div>
-    <div class="col-sm-4">
-      <p class="aboutUs">Donate</p>
+    <!-- <div class="col-sm-4">
+      <p class="aboutUs">MEMBERS</p>
       <a href="#demo2" data-toggle="collapse">
         <img src="/assets/images/nurse.png" class="img-nurse" alt="Random Name">
       </a>
       <div id="demo2" class="collapse">
 
       </div>
-    </div>
-    <div class="col-sm-4">
-      <p class="aboutUs">Membership</p>
+    </div> -->
+    <div class="col-sm-6">
+      <p class="aboutUs">SUPPORT</p>
       <a href="#demo3" data-toggle="collapse">
         <img src="/assets/images/nurse.png" class="img-nurse" alt="Random Name">
       </a>
@@ -148,9 +148,11 @@
 
 <!-- Container Events Section -->
 <div id="tour" class="bg-1">
-  <div class="container">
+  <div class="container text-center">
+    <div class="container">
     <h1 class="text-center">ENS Upcoming Events</h1>
-    <h3 class="text-center">Grow with us!</h3>
+  </div>
+    <!-- <h3 class="text-center">Grow with us!</h3> -->
 <!-- <div class="container"> -->
     <div class="row text-center" id="events">
       <div class="col-sm-4">
@@ -253,26 +255,28 @@
 
 
 
-<div class="container">
+<div class="container" id="boardmembers">
   <h2 class="text-center">BOARDMEMBERS</h2>
   <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#home">Joan</a></li>
-    <li><a data-toggle="tab" href="#menu1">Chris</a></li>
-    <li><a data-toggle="tab" href="#menu2">Molly</a></li>
-    <li><a data-toggle="tab" href="#menu3">Kathryn</a></li>
-    <li><a data-toggle="tab" href="#menu4">Daphne</a></li>
-    <li><a data-toggle="tab" href="#menu5">Amy</a></li>
+    <!-- <li class="active"><a data-toggle="tab" href="#home">Joan</a></li> -->
+    <li class="active tabText"><a data-toggle="tab" href="#home">Chris</a></li>
+    <li class="tabText"><a data-toggle="tab" href="#menu2">Molly</a></li>
+    <li class="tabText"><a data-toggle="tab" href="#menu3">Kathryn</a></li>
+    <li class="tabText"><a data-toggle="tab" href="#menu4">Daphne</a></li>
+    <li class="tabText"><a data-toggle="tab" href="#menu5">Amy</a></li>
+    <!-- <li><a data-toggle="tab" href="#menu6">Raven</a></li> -->
 
   </ul>
 
   <div class="tab-content">
-    <div id="home" class="tab-pane fade in active">
+    <!-- <div id="home" class="tab-pane fade in active">
       <h3>President: Joan Damon-Simon, MBA, RN, Texas</h3>
       <p>Joan's bio goes here.</p>
-    </div>
-    <div id="menu1" class="tab-pane fade">
+    </div> -->
+    <!-- <div id="menu1" class="tab-pane fade"> -->
+    <div id="home" class="tab-pane fade in active">
       <h3>President Elect: Chris Yedinak, DNP, FNP-BC, RN, Oregon</h3>
-      <p>Chris  is the incoming ENS president 2018-2020. She is an
+      <p class="bioText"><img class="bioPic" src="/assets/images/ChrisYenidak1.jpg">Chris  is the incoming ENS president 2018-2020. She is an
 assistant professor in the Department of Neurosurgery, N.W. Pituitary Center at Oregon Health &
 Sciences University, Portland Oregon providing clinical management to patients with pituitary and
 adrenal dysfunction for the past 15 years.
@@ -292,7 +296,7 @@ She is outskied by her 6 year old granddaughter and out  ‘teched’ by her 13
     </div>
     <div id="menu2" class="tab-pane fade">
       <h3>Treasurer: Molly Solares- Yeardley, RN, Arizona</h3>
-      <p>Molly Marriott Solares, R.N. joined ENS in 1990. Since that time she has held Board positions
+      <p class="bioText">Molly Marriott Solares, R.N. joined ENS in 1990. Since that time she has held Board positions
 including Program Director, International Liaison and Treasurer, her current position, held for
 almost a decade. 
  
@@ -313,7 +317,7 @@ activities.</p>
     </div>
     <div id="menu3" class="tab-pane fade">
       <h3>Education Chair:  Kathryn Evans Kreider, DNP, FNP-BC, BC-ADM, N. Carolina</h3>
-      <p>Kathryn is an assistant professor of nursing at Duke University
+      <p class="bioText"><img class="bioPic" src="/assets/images/KathrynKreider2.jpg">Kathryn is an assistant professor of nursing at Duke University
 School of Nursing (DUSON). She is the lead faculty for the new endocrinology specialty for nurse
 practitioners at DUSON, the first program of its kind for nurse practitioners in the Unites States. She is a
 nurse practitioner and director for advanced practice providers in the division of endocrinology at Duke
@@ -325,7 +329,7 @@ the appointed chair of education for the Endocrine Nurses Society.</p>
     </div>
     <div id="menu4" class="tab-pane fade">
       <h3>Research Chair: Daphne Adelman</h3>
-      <p>As a project manager/study coordinator at Northwestern University, I am responsible for the oversight
+      <p class="bioText"><img class="bioPic" src="/assets/images/DaphneAdelman.png">As a project manager/study coordinator at Northwestern University, I am responsible for the oversight
 of administrative functions and operations for both Pharmaceutical and NIH-sponsored studies in the
 area of pituitary – Acromegaly, Cushing’s, growth hormone deficiency and diabetes (T1D and T2D). With
 over 15+ years of relevant research coordination and management experience, I am able to successfully
@@ -343,9 +347,19 @@ obtaining medical histories, performing vital signs, collecting, processing and 
 specimens, dispensing and accounting for study drug, and adverse event reporting.</p>
     </div>
     <div id="menu5" class="tab-pane fade">
-      <h3>Amy Mundy, FNP, BC-ADM</h3>
-      <p> <img class="bioPic" src="/assets/images/AmyMundy.JPG">Amy obtained her FNP at the University of Virginia and her BSN at Georgetown University.  She currently works as a nurse practitioner at the McGuire VA Medical Center in Richmond, Virginia.  She has varied clinical interests and cares for veterans in the general endocrine, diabetes, metabolic bone disease, weight management, and lipid clinics.  She is Board Certified in Advanced Diabetes Management and also has an clinical interest in osteoporosis.  Amy commonly sees patients remotely using Clinical Video Telehealth and enjoys finding new ways to use technology to help her patients.  </p>
+      <h3>Membership Chair:  Amy Mundy, FNP, BC-ADM, Virginia</h3>
+      <p class="bioText"><img class="bioPic" src="/assets/images/AmyMundy.JPG">Amy obtained her FNP at the University of Virginia and her BSN at Georgetown University.  She currently works as a nurse practitioner at the McGuire VA Medical Center in Richmond, Virginia.  She has varied clinical interests and cares for veterans in the general endocrine, diabetes, metabolic bone disease, weight management, and lipid clinics.  She is Board Certified in Advanced Diabetes Management and also has an clinical interest in osteoporosis.  Amy commonly sees patients remotely using Clinical Video Telehealth and enjoys finding new ways to use technology to help her patients.  </p>
     </div>
+    <!-- <div id="menu6" class="tab-pane fade">
+      <h3>Raven McGlotten, MSN, RN</h3>
+      <p class="bioText"> <img class="bioPic" src=""> Raven is a research nurse specialist with the National Institute of Diabetes and
+Digestive and Kidney Disease. There she coordinates multiple clinical research studies with a focus in
+endocrinology and Cushing’s Syndrome, coordinating the care of over 170 active research participants,
+as well as ensuring compliance with protocol and clinical objects. Raven McGlotten is also a Nurse
+Officer with the United Stated Public Health Service (USPHS) Commissioned Corps (Lieutenant
+Commander). As an officer in the USPHS Commissioned Corps, she supports government public health
+goals, and often deploys in support of public health responses to man-made and natural disasters.</p>
+    </div> -->
   </div>
 </div>
 
